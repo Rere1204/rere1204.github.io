@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Rere | Climate & Data Science</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #17141c;
+  color: #fff4f8;
+}
+
+/* BAGIAN HEADER */
+header {
+  padding: 25px 8%;
+  background: #100e14;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-weight: bold;
+  color: #f4c4d7;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+nav a {
+  color: #f9e5ed;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #f4a9c7;
+}
+
+/* HALAMAN DEPAN */
+.hero {
+  text-align: center;
+  padding: 110px 20px;
+  background: linear-gradient(
+    135deg,
+    #17141c,
+    #432638,
+    #17141c
+  );
+}
+
+.hero h1 {
+  color: #f4c4d7;
+  font-size: clamp(34px, 6vw, 55px);
+}
+
+.hero p {
+  color: #f5dce6;
+  line-height: 1.8;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 28px;
+  background: #f4c4d7;
+  color: #21151f;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #ffffff;
+}
+
+/* KONTEN */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 55px 20px;
+}
+
+h2 {
+  color: #f4c4d7;
+}
+
+.card {
+  background: #28212e;
+  border: 1px solid #69465c;
+  border-radius: 18px;
+  padding: 30px;
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  background: #342735;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #765669;
+}
+
+.project h3 {
+  color: #f4c4d7;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: #100e14;
+  padding: 30px;
+  color: #e2c7d5;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">RERE ♡</div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <p>WELCOME TO MY WORLD</p>
+  <h1>Hello, I'm Rere ♡</h1>
+
+  <p>
+    Climate Science | Data Science | Python
+  </p>
+
+  <p>
+    Exploring climate, data, and technology.
+  </p>
+
+  <a href="#projects" class="btn">
+    Explore My Projects
+  </a>
+</section>
+
+<main class="container">
+
+  <section id="about" class="card">
+    <h2>♡ About Me</h2>
+    <p>
+      Welcome to my personal portfolio!
+      I'm passionate about climate science,
+      Python programming, data analysis,
+      and scientific visualization.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>♡ My Projects</h2>
+
+    <div class="projects">
+
+      <div class="project">
+        <h3>Climate Analysis</h3>
+        <p>
+          Exploring climate observations,
+          rainfall, and atmospheric patterns.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Python Programming</h3>
+        <p>
+          Data processing and automation
+          using Python.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Data Visualization</h3>
+        <p>
+          Turning scientific data into
+          meaningful charts and graphics.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Interactive Mapping</h3>
+        <p>
+          Exploring spatial climate data
+          through maps.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>♡ Contact</h2>
+    <p>
+      Find my projects on
+      <a href="https://github.com/rere1204"
+         style="color:#f4c4d7">
+        GitHub
+      </a>.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>Made with ♡ by Rere</p>
+  <p>Climate Science & Data Science Portfolio</p>
+</footer>
+
+</body>
+</html>
