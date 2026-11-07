@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Climate Data Quality Control | Rere</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #17141c;
+  color: #fff4f8;
+  line-height: 1.8;
+}
+
+header {
+  background: #100e14;
+  padding: 22px 8%;
+}
+
+header a {
+  color: #f4c4d7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 75px 20px;
+  background: linear-gradient(
+    135deg, #17141c, #583348, #17141c
+  );
+}
+
+.hero h1 {
+  color: #f4c4d7;
+  font-size: clamp(30px, 5vw, 46px);
+}
+
+.container {
+  max-width: 950px;
+  margin: auto;
+  padding: 35px 20px;
+}
+
+.card {
+  background: #28212e;
+  border: 1px solid #765669;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 24px;
+}
+
+h2 { color: #f4c4d7; }
+
+pre {
+  background: #100e14;
+  color: #f5d2e0;
+  padding: 20px;
+  border-radius: 12px;
+  overflow-x: auto;
+  font-size: 14px;
+}
+
+.status {
+  color: #f4c4d7;
+  font-weight: bold;
+}
+
+footer {
+  background: #100e14;
+  text-align: center;
+  padding: 25px;
+  color: #f4c4d7;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html">
+    ♡ RERE PORTFOLIO | Back to Home
+  </a>
+</header>
+
+<section class="hero">
+  <p>PYTHON & CLIMATE DATA</p>
+  <h1>Climate Data Quality Control</h1>
+  <p>
+    Exploring Missing Data, Quality Checks
+    and Scientific Visualization
+  </p>
+  <p class="status">Project Documentation</p>
+</section>
+
+<main class="container">
+
+<section class="card">
+  <h2>♡ Project Overview</h2>
+  <p>
+    This project explores climate data quality
+    using Python, focusing on identifying
+    missing observations and evaluating
+    data completeness.
+  </p>
+  <p>
+    The goal is to understand data reliability
+    before performing climate analysis.
+  </p>
+</section>
+
+<section class="card">
+  <h2>♡ Methodology</h2>
+
+  <h3>1. Missing Value Detection</h3>
+  <p>
+    Identify missing observations, including
+    the missing-value code 9999 where used
+    in the source dataset.
+  </p>
+
+  <h3>2. Data Completeness</h3>
+  <p>
+    Completeness (%) =
+    (Valid Observations / Expected Observations)
+    x 100
+  </p>
+
+  <h3>3. Data Visualization</h3>
+  <p>
+    Summarize valid and missing observations
+    through charts and tables.
+  </p>
+</section>
+
+<section class="card">
+  <h2>♡ Python Implementation</h2>
+  <p>
+    Example: identifying missing values
+    in an observation column.
+  </p>
+
+<pre><code>import pandas as pd
+
+# Example dataset
+data = [25, 27, 9999, 29, None, 30]
+
+df = pd.DataFrame({"value": data})
+
+# Identify valid observations
+valid = (
+    df["value"].notna()
+    &amp; (df["value"] != 9999)
+)
+
+# Calculate completeness
+total = len(df)
+n_valid = valid.sum()
+
+percentage = (n_valid / total) * 100
+
+print("Valid observations:", n_valid)
+print("Completeness:", percentage)
+</code></pre>
+
+  <p>
+    This is an illustrative example.
+    The final analysis will use an
+    authorized dataset and its observation
+    schedule to determine expected records.
+  </p>
+</section>
+
+<section class="card">
+  <h2>♡ Results & Visualization</h2>
+  <p>
+    Charts, data summaries, and analysis
+    results will be added here after
+    dataset validation.
+  </p>
+  <p class="status">
+    Results: In Progress
+  </p>
+</section>
+
+<section class="card">
+  <h2>♡ Learning Notes</h2>
+  <p>
+    Learning Python one error at a time.
+    Even climate data deserves a little
+    debugging therapy!
+  </p>
+</section>
+
+</main>
+
+<footer>
+  <p>Made with ♡ by Rere</p>
+  <p>Climate Science & Data Science Portfolio</p>
+</footer>
+
+</body>
+</html>
